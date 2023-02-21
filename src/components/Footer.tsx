@@ -10,17 +10,17 @@ const Footer = () => {
   return (
     <div>
       <div className='bg-[#1c1b1b]'>
-        <div className='container m-auto  bg-[url("/assets/map-small.png")] bg-no-repeat bg-center'>
-          <div className='py-16 flex justify-between text-[#aeadad]'>
-            <div className='pr-6 w-1/4'>
-              <div className='text-left m-auto mb-10'>
+        <div className='container m-auto px-10 bg-[url("/assets/map-small.png")] bg-no-repeat bg-center'>
+          <div className='py-16 flex justify-between text-[#aeadad] flex-col md:flex-row space-y-8'>
+            <div className='pr-6 md:w-1/4 text-center'>
+              <div className='md:text-left m-auto mb-10'>
                 <p className='text-2xl my-2 text-white uppercase'>About Us</p>
-                <div className='bg-amber-400 p-0.5 max-w-[80px]'></div>
+                <div className='bg-amber-400 p-0.5 m-auto max-w-[80px]'></div>
               </div>
               <div className='flex flex-col justify-between space-y-4'>
                 <div>
                   <img
-                    className='mb-2'
+                    className='mb-2 m-auto'
                     width={100}
                     src='/assets/images/sliders/3.jpg'
                     alt='alt'
@@ -29,7 +29,7 @@ const Footer = () => {
                 <div>
                   <p>AMASPACE is a Building Technology Service Company consisting of professionals who are nationally renowned leaders in building technology service. With a strong backbone of highly competent and proficient work force.</p>
                 </div>
-                <div className='flex space-x-2'>
+                <div className='flex space-x-2 m-auto'>
                   <div className='p-2 bg-[#1d1d1d] border border-slate-600'>
                     <BsTwitter/>
                   </div>
@@ -48,10 +48,10 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className='px-6 w-1/4'>
-              <div className='text-left m-auto mb-10'>
+            <div className='px-6 md:w-1/4 text-center'>
+              <div className='md:text-left m-auto mb-10'>
                 <p className='text-2xl my-2 text-white uppercase'>About Us</p>
-                <div className='bg-amber-400 p-0.5 max-w-[80px]'></div>
+                <div className='bg-amber-400 m-auto p-0.5 max-w-[80px]'></div>
               </div>
               <div className='flex justify-between'>
                 <div className=' flex flex-col justify-between space-y-4'>
@@ -84,10 +84,10 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className='pl-6 w-1/4'>
-              <div className='text-left m-auto mb-10'>
+            <div className='pl-6 md:w-1/4 text-center'>
+              <div className='md:text-left m-auto mb-10'>
                 <p className='text-2xl my-2 text-white uppercase'>Abuja Office</p>
-                <div className='bg-amber-400 p-0.5 max-w-[80px]'></div>
+                <div className='bg-amber-400 m-auto p-0.5 max-w-[80px]'></div>
               </div>
               <div className='space-y-4 leading-7'>
                 <div className='flex'>
@@ -107,10 +107,10 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className='pl-6 w-1/4'>
-              <div className='text-left m-auto mb-10'>
+            <div className='pl-6 md:w-1/4 text-center'>
+              <div className='md:text-left m-auto mb-10'>
                 <p className='text-2xl my-2 text-white uppercase'>Lagos Office</p>
-                <div className='bg-amber-400 p-0.5 max-w-[80px]'></div>
+                <div className='bg-amber-400 m-auto p-0.5 max-w-[80px]'></div>
               </div>
               <div className='space-y-4 leading-7'>
                 <div className='flex'>
@@ -135,7 +135,7 @@ const Footer = () => {
         </div>
         <div className='bg-black'>
           <div className='container m-auto'>
-            <div className='flex justify-between text-[#484646] items-center py-3'>
+            <div className='flex md:flex-row flex-col md:justify-between text-[#484646] items-center py-3'>
               <p>Copyright © 2023 AmaSpace Nigeria | All Right Reserved</p>
               <div className='flex items-center space-x-1'>
                 <p>with </p>
