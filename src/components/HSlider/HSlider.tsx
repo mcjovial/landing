@@ -78,7 +78,7 @@ const HSlider: FC<IHSlider> = ({data, title, bar}) => {
             <Slider {...settings}>
               {
                 data.map((card: { id: number; img: string; title: string | undefined; body: string | undefined }, i: React.Key | null | undefined) => (
-                  <Card key={i} img={card.img} title={card.title} body={card.body} post={true} id={card.id} />
+                  <Card key={i} img={card.img} title={card.title} body={card.body} post={!!card.body} id={card.id} />
                 ))
               }
             </Slider>

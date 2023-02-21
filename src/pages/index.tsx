@@ -12,14 +12,23 @@ import Footer from '@/components/Footer';
 import Partners from '@/components/Partners';
 
 export default function Home() {
+  const featuredWork = [
+    { img: "/assets/images/sliders/3.jpg" },
+    { img: "/assets/images/sliders/1.jpg" },
+    { img: "/assets/images/sliders/3.jpg" },
+    { img: "/assets/images/sliders/1.jpg" },
+    { img: "/assets/images/sliders/5.jpg" },
+    { img: "/assets/images/sliders/1.jpg" },
+    { img: "/assets/images/sliders/5.jpg" },
+  ]
   const offerData = [
-    { img: "/assets/images/sliders/3.jpg" },
-    { img: "/assets/images/sliders/1.jpg" },
-    { img: "/assets/images/sliders/3.jpg" },
-    { img: "/assets/images/sliders/1.jpg" },
-    { img: "/assets/images/sliders/5.jpg" },
-    { img: "/assets/images/sliders/1.jpg" },
-    { img: "/assets/images/sliders/5.jpg" },
+    { id: 1, img: "/assets/images/sliders/3.jpg", title: "Service title", body: "A building management system (BMS), otherwise known as a building automation system (BAS), is a computer-based control system installed in buildings that controls and monitors the building's mechanical and electrical equipment such as ventilation, lighting, power systems, fire systems, and security systems." },
+    { id: 2, img: "/assets/images/sliders/1.jpg", title: "Service title", body: "A building management system (BMS), otherwise known as a building automation system (BAS), is a computer-based control system installed in buildings that controls and monitors the building's mechanical and electrical equipment such as ventilation, lighting, power systems, fire systems, and security systems." },
+    { id: 3, img: "/assets/images/sliders/3.jpg", title: "Service title", body: "A building management system (BMS), otherwise known as a building automation system (BAS), is a computer-based control system installed in buildings that controls and monitors the building's mechanical and electrical equipment such as ventilation, lighting, power systems, fire systems, and security systems." },
+    { id: 4, img: "/assets/images/sliders/1.jpg", title: "Service title", body: "A building management system (BMS), otherwise known as a building automation system (BAS), is a computer-based control system installed in buildings that controls and monitors the building's mechanical and electrical equipment such as ventilation, lighting, power systems, fire systems, and security systems." },
+    { id: 5, img: "/assets/images/sliders/5.jpg", title: "Service title", body: "A building management system (BMS), otherwise known as a building automation system (BAS), is a computer-based control system installed in buildings that controls and monitors the building's mechanical and electrical equipment such as ventilation, lighting, power systems, fire systems, and security systems." },
+    { id: 6, img: "/assets/images/sliders/1.jpg", title: "Service title", body: "A building management system (BMS), otherwise known as a building automation system (BAS), is a computer-based control system installed in buildings that controls and monitors the building's mechanical and electrical equipment such as ventilation, lighting, power systems, fire systems, and security systems." },
+    { id: 7, img: "/assets/images/sliders/5.jpg", title: "Service title", body: "A building management system (BMS), otherwise known as a building automation system (BAS), is a computer-based control system installed in buildings that controls and monitors the building's mechanical and electrical equipment such as ventilation, lighting, power systems, fire systems, and security systems." },
   ]
 
   return (
@@ -67,7 +76,7 @@ export default function Home() {
           </div>
         </div> */}
         <div className='bg-[url("/assets/bg-section-1.jpg")] bg-no-repeat bg-fixed'>
-          <HSlider data={offerData} title="Featured Work" bar={true} />
+          <HSlider data={featuredWork} title="Featured Work" bar={true} />
         </div>
         <div className='bg-white py-16'>
           <div className='container m-auto'>

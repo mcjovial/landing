@@ -19,7 +19,7 @@ const Card: FC<ICard> = ({id, img, title, body, post}) => {
             <h2 className='text-2xl text-center text-[#363535]'>{title}</h2>
           </div> : ''}
           {body ? <div>
-            <p className='text-[#363535]'>{body}</p>
+            <p className='text-[#403f3f]'>{body}</p>
           </div> : ''}
           {post ? <div><Link className='font-semibold border-[1.5px] px-6 py-2 rounded hover:bg-white' href={`services/${id}`}>Read more...</Link></div> : ''}
         </div>
