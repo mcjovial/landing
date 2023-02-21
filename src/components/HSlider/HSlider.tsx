@@ -71,7 +71,7 @@ const HSlider: FC<IHSlider> = ({data, title, bar}) => {
         <div className='py-16'>
           <div className='text-left m-auto mb-10'>
             <p className='text-2xl my-2 text-gray-600 uppercase'>{title}</p>
-            <div className='bg-amber-400 p-0.5 max-w-[80px]'></div>
+            <div className='bg-[#f3b004] p-0.5 max-w-[80px]'></div>
             <hr />
           </div>
           <div className='relative'>
@@ -83,7 +83,7 @@ const HSlider: FC<IHSlider> = ({data, title, bar}) => {
               }
             </Slider>
             {bar ? <div className='h-[2px] bg-gray-400 w-[250px] absolute -top-[15px] right-0'>
-              <div className='bg-amber-400 absolute h-full transition-all' style={{ width: `${progress}%` }}></div>
+              <div className='bg-[#f3b004] absolute h-full transition-all' style={{ width: `${progress}%` }}></div>
             </div> : ''}
           </div>
         </div>

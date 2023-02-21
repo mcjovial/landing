@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
       <div className='sticky top-0 z-10 '>
-        <div className='absolute w-full bg-slate-900'>
+        <div className='w-full bg-slate-900'>
           <div className='border-b-[1px] border-gray-200 border-opacity-20 text-white'>
             <div className='hidden justify-between px-4 py-3 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8'>
               <div className='flex'>

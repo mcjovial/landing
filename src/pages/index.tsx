@@ -33,7 +33,7 @@ export default function Home() {
       <main className=''>
         <Header />
         <Hero />
-        <div className='bg-amber-400 p-8'>
+        <div className='bg-[#f3b004] p-8'>
           <div className='container m-auto space-y-6 text-center md:flex md:items-center md:justify-between md:space-y-0'>
             <p className='text-white text-xl'>
               Contractors & Construction Managers Since 1981

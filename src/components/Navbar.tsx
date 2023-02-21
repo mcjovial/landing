@@ -1,19 +1,20 @@
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className='w-full shadow'>
+    <nav className='w-full shadow text-[#4d4d4d]'>
       <div className='justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8'>
         <div>
           <div className='flex items-center justify-between py-3 md:py-5 md:block'>
             <a href='#'>
-              <h2 className='text-2xl font-bold text-white'>LOGO</h2>
+              <h2 className='text-2xl font-bold'>LOGO</h2>
             </a>
             <div className='md:hidden'>
               <button
-                className='p-2 text-white rounded-md outline-none focus:border-white focus:border'
+                className='p-2 rounded-md outline-none focus:border-white focus:border'
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -56,20 +57,20 @@ export default function NavBar() {
             }`}
           >
             <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 uppercase'>
-              <li className='text-white hover:text-amber-300 hover:underline px-3'>
-                <a href='#'>Home</a>
+              <li className='hover:text-[#f3b004] hover:underline px-3'>
+                <Link href='/'>Home</Link>
               </li>
-              <li className='text-white hover:text-amber-300 hover:underline px-3'>
-                <a href='#'>About US</a>
+              <li className='hover:text-[#f3b004] hover:underline px-3'>
+                <Link href='about-us'>About US</Link>
               </li>
-              <li className='text-white hover:text-amber-300 hover:underline px-3'>
-                <a href='#'>Services</a>
+              <li className='hover:text-[#f3b004] hover:underline px-3'>
+                <Link href='service'>Services</Link>
               </li>
-              <li className='text-white hover:text-amber-300 hover:underline px-3'>
-                <a href='#'>Our Products</a>
+              <li className='hover:text-[#f3b004] hover:underline px-3'>
+                <Link href='products'>Our Products</Link>
               </li>
-              <li className='text-white hover:text-amber-300 hover:underline px-3'>
-                <a href='#'>Contact Us</a>
+              <li className='hover:text-[#f3b004] hover:underline px-3'>
+                <Link href='contact-us'>Contact Us</Link>
               </li>
             </ul>
           </div>

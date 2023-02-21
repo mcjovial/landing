@@ -9,7 +9,7 @@ interface ICard {
   
 const Card: FC<ICard> = ({img, name, details, post}) => {
   return (
-    <div className='w-100% bg-amber-400 shadow-xl'>
+    <div className='w-100% bg-[#f3b004] shadow-xl'>
       <div>
         <img className='h-[250px] w-[100%] object-cover' src={img} alt="dp" />
         <div className='flex flex-col gap-4 p-[20px]'>
