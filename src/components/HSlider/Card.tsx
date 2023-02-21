@@ -1,25 +1,27 @@
+import Link from 'next/link';
 import React, { FC } from 'react'
 
 interface ICard {
+  id?: number;
   img: string;
-  name?: string;
-  details?: string;
+  title?: string;
+  body?: string;
   post?: boolean
 }
   
-const Card: FC<ICard> = ({img, name, details, post}) => {
+const Card: FC<ICard> = ({id, img, title, body, post}) => {
   return (
     <div className='w-100% bg-[#f3b004] shadow-xl'>
       <div>
         <img className='h-[250px] w-[100%] object-cover' src={img} alt="dp" />
         <div className='flex flex-col gap-4 p-[20px]'>
-          {name ? <div>
-            <h2>{name}</h2>
+          {title ? <div>
+            <h2 className='text-2xl text-center text-[#363535]'>{title}</h2>
           </div> : ''}
-          {details ? <div>
-            <p>{details}</p>
+          {body ? <div>
+            <p className='text-[#363535]'>{body}</p>
           </div> : ''}
-          {post ? <div><a className='text-purple-500' href="">Read more...</a></div> : ''}
+          {post ? <div><Link className='font-semibold border-[1.5px] px-6 py-2 rounded hover:bg-white' href={`services/${id}`}>Read more...</Link></div> : ''}
         </div>
       </div>
     </div>

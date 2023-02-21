@@ -77,8 +77,8 @@ const HSlider: FC<IHSlider> = ({data, title, bar}) => {
           <div className='relative'>
             <Slider {...settings}>
               {
-                data.map((card: { img: string }, i: React.Key | null | undefined) => (
-                  <Card key={i} img={card.img} />
+                data.map((card: { id: number; img: string; title: string | undefined; body: string | undefined }, i: React.Key | null | undefined) => (
+                  <Card key={i} img={card.img} title={card.title} body={card.body} post={true} id={card.id} />
                 ))
               }
             </Slider>

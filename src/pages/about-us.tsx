@@ -19,7 +19,7 @@ const AboutUs = () => {
           <NavBar/>
         </div>
         <div className='bg-[url("/assets/images/sliders/5.jpg")] bg-no-repeat bg-fixed'>
-          <Breadcrum/>
+          <Breadcrum title='about us' name='about us'/>
         </div>
         <div className='bg-white'>
           {/* <div className='container m-auto px-10 py-16'>
