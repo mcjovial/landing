@@ -28,8 +28,8 @@ const Gallery = () => {
               <div className='w-full'>
                 <div className='mb-3'>
                   <img
-                    className=''
-                    src='/assets/images/sliders/3.jpg'
+                    className='w-full'
+                    src='/assets/images/gallery/1.jpg'
                     alt='alt'
                   />
                 </div>
@@ -38,7 +38,7 @@ const Gallery = () => {
                     <img
                       width={200}
                       className=''
-                      src='/assets/images/sliders/1.jpg'
+                      src='/assets/images/gallery/p-1.jpg'
                       alt='alt'
                     />
                   </div>
@@ -46,7 +46,7 @@ const Gallery = () => {
                     <img
                       width={200}
                       className=''
-                      src='/assets/images/sliders/3.jpg'
+                      src='/assets/images/gallery/p-2.jpg'
                       alt='alt'
                     />
                   </div>
@@ -54,7 +54,7 @@ const Gallery = () => {
                     <img
                       width={200}
                       className=''
-                      src='/assets/images/sliders/5.jpg'
+                      src='/assets/images/gallery/p-3.jpg'
                       alt='alt'
                     />
                   </div>
