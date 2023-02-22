@@ -1,17 +1,18 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import Logo from './Logo';
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className='w-full shadow text-[#4d4d4d]'>
+    <nav className='w-full shadow text-[#4d4d4d] bg-white'>
       <div className='justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8'>
         <div>
           <div className='flex items-center justify-between py-3 md:py-5 md:block'>
-            <a href='#'>
-              <h2 className='text-2xl font-bold'>LOGO</h2>
-            </a>
+            <Link href='/'>
+              <Logo/>
+            </Link>
             <div className='md:hidden'>
               <button
                 className='p-2 rounded-md outline-none focus:border-white focus:border'

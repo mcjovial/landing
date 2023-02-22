@@ -5,6 +5,7 @@ import { RxDoubleArrowRight } from 'react-icons/rx'
 import { ImGooglePlus } from 'react-icons/im'
 import { GrInstagram } from 'react-icons/gr'
 import { GiLoveMystery } from 'react-icons/gi'
+import Logo from './Logo'
 
 const Footer = () => {
   return (
@@ -18,13 +19,8 @@ const Footer = () => {
                 <div className='bg-amber-400 p-0.5 md:m-0 m-auto max-w-[80px]'></div>
               </div>
               <div className='flex flex-col justify-between space-y-4'>
-                <div>
-                  <img
-                    className='mb-2 md:m-0 m-auto'
-                    width={100}
-                    src='/assets/images/sliders/3.jpg'
-                    alt='alt'
-                  />
+                <div className='md:text-left'>
+                  <Logo/>
                 </div>
                 <div className='md:text-left text-center'>
                   <p>AMASPACE is a Building Technology Service Company consisting of professionals who are nationally renowned leaders in building technology service. With a strong backbone of highly competent and proficient work force.</p>
