@@ -38,7 +38,7 @@ const Accordion = () => {
 
   return (
     <div className='bg-white'>
-      <div className='flex justify-between'>
+      <div className='flex justify-between w-full'>
         <div>
           <div className='text-left m-auto mb-10'>
             <p className='text-2xl my-2 text-gray-600'>WHY CHOOSE US</p>

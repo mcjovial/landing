@@ -80,11 +80,11 @@ export default function Home() {
         </div>
         <div className='bg-white py-16'>
           <div className='container m-auto px-10'>
-            <div className='flex justify-between md:flex-row flex-col gap-8'>
-              <div className='w-1/2'>
+            <div className='flex justify-between md:flex-row flex-col md:gap-8'>
+              <div className='md:w-1/2 w-full'>
                 <Accordion/>
               </div>
-              <div className='w-1/2'>
+              <div className='md:w-1/2 w-full'>
                 <Gallery/>
               </div>
             </div>

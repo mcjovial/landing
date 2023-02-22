@@ -21,7 +21,7 @@ const Gallery = () => {
           <div className='flex justify-between'>
             <div>
               <div className='text-left m-auto mb-10'>
-                <p className='text-2xl my-2 text-gray-600'>WHY CHOOSE US</p>
+                <p className='text-2xl my-2 text-gray-600'>ABOUT US</p>
                 <div className='bg-amber-400 p-0.5 max-w-[80px]'></div>
                 <hr />
               </div>
