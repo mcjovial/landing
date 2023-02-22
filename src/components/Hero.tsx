@@ -13,8 +13,8 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 
 export default function Hero() {
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
+  const progressCircle: any = useRef(null);
+  const progressContent: any = useRef(null);
   const onAutoplayTimeLeft = (s: any, time: number, progress: number) => {
     progressCircle.current.style.setProperty('--progress', 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;

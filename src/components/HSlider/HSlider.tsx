@@ -67,7 +67,7 @@ const HSlider: FC<IHSlider> = ({data, title, bar}) => {
 
   return (
     <div className=''>
-      <div className='container m-auto'>
+      <div className='container m-auto px-10'>
         <div className='py-16'>
           <div className='text-left m-auto mb-10'>
             <p className='text-2xl my-2 text-gray-600 uppercase'>{title}</p>

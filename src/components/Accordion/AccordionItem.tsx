@@ -5,7 +5,7 @@ import { Collapse } from 'react-collapse'
 
 interface IAccordion {
   open: any;
-  toggle: (message: string) => void;
+  toggle: (arg0: any) => void;
   title: string;
   description: string;
 }

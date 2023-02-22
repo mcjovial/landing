@@ -34,18 +34,18 @@ const AboutUs = () => {
             </div>
           </div> */}
           <div className='container m-auto px-10 py-16 text-[#4d4d4d]'>
-            <div className=' m-auto mb-10'>
+            <div className='m-auto mb-10'>
               <p className='text-2xl my-2 text-gray-600 uppercase'>Who we are</p>
               <div className='bg-[#f3b004] p-0.5 max-w-[80px]'></div>
             </div>
-            <div className='flex items-end leading-6 mb-20'>
-              <div className='w-1/2'>
+            <div className='flex md:flex-row flex-col items-end leading-6 text-center md:text-left md:space-y-0 space-y-4 mb-10 justify-between gap-8'>
+              <div className='md:w-1/2'>
                 <p className=''>AMASPACE is a Building Technology Service Company consisting of professionals who are nationally renowned leaders in building technology service. With a strong backbone of highly competent and proficient work force.</p>
               </div>
-              <div className='bg-[#f3b004] text-white p-8 mx-4 w-1/2'>
+              <div className='bg-[#f3b004] text-white p-8 md:w-1/2'>
                 <p>AMASPACE is accredited by World leaders in Technological Innovations and Building Solutions. We offer surveillance, physical and information security, networking, IT service management and project management.</p>
               </div>
-              <div className='w-1/2'>
+              <div className='md:w-1/2'>
                 <p>We also design, procure, install and maintain electrical, mechanical and building technology systems for industrial, commercial and residential clients.</p>
               </div>
             </div>
@@ -53,13 +53,13 @@ const AboutUs = () => {
           </div>
           
           <div className='container m-auto px-10 text-[#4d4d4d]'>
-            <div className='flex'>
-              <div className='w-1/3 leading-[26px]'>
+            <div className='flex md:flex-row flex-col justify-between gap-8'>
+              <div className='md:w-1/3 leading-[26px]'>
                 <p>We design, procure, install and maintain Heating, Ventilation and Air Conditioning (HVAC) systems, Water supply and water works, Electrical works (Major Voltage & low voltage), Firefighting, General Plumbing services , Power supply, electrical network and communication systems to meet industrial, commercial or residential requirements. We also provide quality general plumbing  services. Our employees and local Agents are trained by international experts on the latest trends, tools, and technologies.3130307931</p>
                 <br />
                 <p>With access to the latest machines and tools so that our product is latest and cost effective, we are confident that we will be able to create an exceptional system that will meet and exceed Client’s expectation.</p>
               </div>
-              <div className='w-2/3'>
+              <div className='md:w-2/3'>
                 <div className='flex'>
                   <div className='mr-4'>
                     <img src="/assets/images/gallery/1.jpg" alt="1" />

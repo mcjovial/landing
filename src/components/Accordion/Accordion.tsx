@@ -25,11 +25,11 @@ const Accordion = () => {
     },
   ];
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState();
 
   const toggle = (index: any) => {
     if (open === index) {
-      return setOpen(null);
+      return setOpen(index);
     }
     setOpen(index);
   };

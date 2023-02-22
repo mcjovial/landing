@@ -33,7 +33,7 @@ const Gallery = () => {
                     alt='alt'
                   />
                 </div>
-                <div className='flex justify-between w-full'>
+                <div className='flex justify-between w-full gap-4'>
                   <div className='h-auto'>
                     <img
                       width={200}

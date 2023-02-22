@@ -79,12 +79,12 @@ export default function Home() {
           <HSlider data={featuredWork} title="Featured Work" bar={true} />
         </div>
         <div className='bg-white py-16'>
-          <div className='container m-auto'>
-            <div className='flex justify-between'>
-              <div className='mr-4'>
+          <div className='container m-auto px-10'>
+            <div className='flex justify-between md:flex-row flex-col gap-8'>
+              <div className=''>
                 <Accordion/>
               </div>
-              <div className='ml-4'>
+              <div className=''>
                 <Gallery/>
               </div>
             </div>

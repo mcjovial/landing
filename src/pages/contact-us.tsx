@@ -26,8 +26,8 @@ const ContactUs = () => {
         </div>
         <div className=''>
           <div className='container m-auto px-10 py-20'>
-            <div className='flex justify-between gap-8'>
-              <div className='w-1/3 text-[#807e7e] space-y-4'>
+            <div className='flex md:flex-row flex-col md:justify-between gap-8'>
+              <div className='md:w-1/3 text-[#807e7e] space-y-4'>
                 <p className='uppercase text-2xl text-[#494848]'>call us</p>
                 <p className='leading-[32px]'>Cras id justo eget sapien scelerisque lacinia non a eros. In a volutpat magna. Vivamus pretium urna at condimentum porta. Phasellus mollis mauris dolor, a tincidunt mauris fringilla. Phasellus lobortis tortor urna, vitae venenatis dui bibendum at.</p>
                 <div className='flex items-start gap-6'>
@@ -56,7 +56,7 @@ const ContactUs = () => {
                   </div>
                 </div>
               </div>
-              <div className='w-2/3 text-[#807e7e] space-y-4'>
+              <div className='md:w-2/3 text-[#807e7e] space-y-4'>
                 <p className='uppercase text-2xl text-[#494848]'>Get in touch with us</p>
                 <form action="" className='w-full space-y-5'>
                   <div className='flex justify-between gap-5'>
@@ -68,7 +68,7 @@ const ContactUs = () => {
                     <input className='w-full border px-4 py-4 focus:outline focus:outline-[#a19f9f] focus:border-none' type="text" placeholder='Subject*'/>
                   </div>
                   <div>
-                    <textarea className='w-full border px-4 py-4 focus:outline focus:outline-[#a19f9f] focus:border-none' name="message" id="" rows="10" placeholder='Message*'></textarea>
+                    <textarea className='w-full border px-4 py-4 focus:outline focus:outline-[#a19f9f] focus:border-none' name="message" id="" rows={10} placeholder='Message*'></textarea>
                   </div>
                   <div className='text-center'>
                     <button className='bg-[#f3b004] hover:bg-[#272626] py-4 px-10 uppercase text-white'>Send message</button>
