@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Logo from './Logo';
+import ServiceNav from './ServiceNav';
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -64,9 +65,7 @@ export default function NavBar() {
               <li className='hover:text-[#f3b004] hover:underline px-3'>
                 <Link href='about-us'>About US</Link>
               </li>
-              <li className='hover:text-[#f3b004] hover:underline px-3'>
-                <Link href='services'>Services</Link>
-              </li>
+              <ServiceNav/>
               <li className='hover:text-[#f3b004] hover:underline px-3'>
                 <Link href='products'>Our Products</Link>
               </li>
