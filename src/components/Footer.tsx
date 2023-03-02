@@ -82,13 +82,13 @@ const Footer = () => {
             </div>
             <div className='md:w-1/4 text-center'>
               <div className='md:text-left m-auto mb-10'>
-                <p className='text-2xl my-2 text-white uppercase'>Abuja Office</p>
+                <p className='text-2xl my-2 text-white uppercase'>Lagos Office</p>
                 <div className='bg-amber-400 md:m-0 m-auto p-0.5 max-w-[80px]'></div>
               </div>
               <div className='space-y-4 leading-7'>
                 <div className='flex'>
                   <p className='mr-3 w-14 font-black'>Address:</p>
-                  <p className='md:text-left'>Plot 8A, Golden Spring Estate, Duboyi District, Abuja</p>
+                  <p className='md:text-left'>C4 U6, Horizon 2 Lekki Gardens, Ikate, Lekki-Epe Expressway, Lagos State</p>
                 </div>
                 <div className='flex'>
                   <p className='mr-3 w-14 font-black'>Phone:</p>
@@ -105,13 +105,13 @@ const Footer = () => {
             </div>
             <div className='md:w-1/4 text-center'>
               <div className='md:text-left m-auto mb-10'>
-                <p className='text-2xl my-2 text-white uppercase'>Lagos Office</p>
+                <p className='text-2xl my-2 text-white uppercase'>Abuja Office</p>
                 <div className='bg-amber-400 md:m-0 m-auto p-0.5 max-w-[80px]'></div>
               </div>
               <div className='space-y-4 leading-7'>
                 <div className='flex'>
                   <p className='mr-3 w-14 font-black'>Address:</p>
-                  <p className='md:text-left'>C4 U6, Horizon 2 Lekki Gardens, Ikate, Lekki-Epe Expressway, Lagos State</p>
+                  <p className='md:text-left'>Plot 8A, Golden Spring Estate, Duboyi District, Abuja</p>
                 </div>
                 <div className='flex'>
                   <p className='mr-3 w-14 font-black'>Phone:</p>
