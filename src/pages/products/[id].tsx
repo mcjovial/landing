@@ -50,7 +50,7 @@ const ProductDetail = () => {
                   <div className='mb-3'>
                     <img
                       className='w-full'
-                      src='/assets/images/gallery/1.jpg'
+                      src='/assets/shop-item.png'
                       alt='alt'
                     />
                   </div>

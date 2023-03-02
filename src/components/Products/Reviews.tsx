@@ -41,7 +41,7 @@ const Reviews = () => {
                 <input className='w-full border px-4 py-4 focus:outline focus:outline-[#a19f9f] focus:border-none' type="email" placeholder='Email*'/>
               </div>
               <div className='text-left'>
-                <button className='bg-[#f3b004] hover:bg-[#272626] py-4 px-10 uppercase text-black hover:text-white'>Send message</button>
+                <button className='bg-[#f3b004] hover:bg-[#272626] py-4 px-10 uppercase text-black hover:text-white'>Submit Review</button>
               </div>
             </form>
           </div>

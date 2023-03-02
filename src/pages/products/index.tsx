@@ -62,10 +62,10 @@ const Products = () => {
                   </div>
                   <div>
                     <select className="bg-gray-50 border border-gray-300 text-gray-600 text-sm focus:ring-black focus:border-black block w-full p-4 focus:outline-none">
-                      <option selected>Default Sorting</option>
-                      <option value="size">Size</option>
-                      <option value="color">Color</option>
-                      <option value="price">Price</option>
+                      <option selected>Categories</option>
+                      <option value="size">Fire Safety</option>
+                      <option value="color">Building Automation</option>
+                      <option value="price">Access Control</option>
                     </select>
                   </div>
                 </div>
