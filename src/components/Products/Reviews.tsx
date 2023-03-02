@@ -13,19 +13,19 @@ const Reviews = () => {
             </div>
             <div>
               <div className='flex items-center gap-4 text-xs'>
-                <span className='inline'>5 Star</span> <div className='bg-gray-200 h-1.5 w-[150px] '></div> <span>100%</span>
+                <span className='inline'>5 Star</span> <div className='bg-gray-200 h-1.5 w-[140px] '></div> <span>100%</span>
               </div>
               <div className='flex items-center gap-4 text-xs'>
-                <span className='inline'>4 Star</span> <div className='bg-gray-200 h-1.5 w-[150px] '></div> <span>0</span>
+                <span className='inline'>4 Star</span> <div className='bg-gray-200 h-1.5 w-[140px] '></div> <span>0</span>
               </div>
               <div className='flex items-center gap-4 text-xs'>
-                <span className='inline'>3 Star</span> <div className='bg-gray-200 h-1.5 w-[150px] '></div> <span>0</span>
+                <span className='inline'>3 Star</span> <div className='bg-gray-200 h-1.5 w-[140px] '></div> <span>0</span>
               </div>
               <div className='flex items-center gap-4 text-xs'>
-                <span className='inline'>2 Star</span> <div className='bg-gray-200 h-1.5 w-[150px] '></div> <span>0</span>
+                <span className='inline'>2 Star</span> <div className='bg-gray-200 h-1.5 w-[140px] '></div> <span>0</span>
               </div>
               <div className='flex items-center gap-4 text-xs'>
-                <span className='inline'>1 Star</span> <div className='bg-gray-200 h-1.5 w-[150px] '></div> <span>0</span>
+                <span className='inline'>1 Star</span> <div className='bg-gray-200 h-1.5 w-[140px] '></div> <span>0</span>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Gallery from '@/components/Gallery'
 import NavBar from '@/components/Navbar'
 import Breadcrum from '@/components/Page/Breadcrum'
@@ -43,7 +44,7 @@ const ProductDetail = () => {
         </div>
         <div className='py-16'>
           <div className='container m-auto px-10'>
-            <div className='flex justify-between gap-4 flex-col md:flex-row'>
+            <div className='flex justify-between gap-8 flex-col md:flex-row'>
               <div>
                 <div className='w-full'>
                   <div className='mb-3'>
@@ -126,6 +127,7 @@ const ProductDetail = () => {
             </div>
           </div>
         </div>
+        <Footer/>
       </main>
     </>
   )
