@@ -3,17 +3,24 @@ import NavBar from '@/components/Navbar'
 import Breadcrum from '@/components/Page/Breadcrum'
 import ProductCard from '@/components/Products/Card'
 import Head from 'next/head'
-import React from 'react'
+import React, { useState } from 'react'
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 
 const Products = () => {
+  const [keyword, setKeyword] = useState('');
   const productsData = [
-    {id: 1, img: "/assets/shop-image.png", name: "Product One"},
-    {id: 2, img: "/assets/shop-image.png", name: "Product One"},
-    {id: 3, img: "/assets/shop-image.png", name: "Product One"},
-    {id: 4, img: "/assets/shop-image.png", name: "Product One"},
-    {id: 5, img: "/assets/shop-image.png", name: "Product One"},
-    {id: 6, img: "/assets/shop-image.png", name: "Product One"},
-  ]
+    { id: 1, img: "/assets/shop-image.png", name: "Product One" },
+    { id: 2, img: "/assets/shop-image.png", name: "Product One" },
+    { id: 3, img: "/assets/shop-image.png", name: "Product One" },
+    { id: 4, img: "/assets/shop-image.png", name: "Product One" },
+    { id: 5, img: "/assets/shop-image.png", name: "Product One" },
+    { id: 6, img: "/assets/shop-image.png", name: "Product One" },
+  ];
+
+  const search = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+  }
+
   return (
     <>
       <Head>
@@ -32,16 +39,29 @@ const Products = () => {
         <div className='py-16'>
           <div className='container m-auto px-10'>
             <div className='flex justify-between gap-4 flex-col md:flex-row'>
-              <aside className='bg-gray-200 md:h-screen md:w-[30%]'>
+              {/* <aside className='bg-gray-200 md:h-screen md:w-[30%]'>
 
-              </aside>
-              <section className='md:w-[70%]'>
+              </aside> */}
+              <section className=''>
                 <div className='flex justify-between items-center'>
                   <div className='text-gray-600'>
-                    <p>Showing 1–6 of 7 results</p>
+                    <form onSubmit={search}>
+                      <div className="relative w-80">
+                        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                          <MagnifyingGlassIcon className="w-5 h-5"/>
+                        </div>
+                        <input
+                          type="search"
+                          className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-black focus:border-black focus:outline-none"
+                          placeholder="Search Products..."
+                          onChange={(e)=> setKeyword(e.target.value)}
+                        />
+                        <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-[#f3b004] hover:bg-[#f4c44b] focus:ring-4 focus:ring-gray-300 font-medium text-sm px-4 py-2 focus:outline-none">Search</button>
+                      </div>
+                    </form>
                   </div>
                   <div>
-                    <select className="bg-gray-50 border border-gray-300 text-gray-600 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-4">
+                    <select className="bg-gray-50 border border-gray-300 text-gray-600 text-sm focus:ring-black focus:border-black block w-full p-4 focus:outline-none">
                       <option selected>Default Sorting</option>
                       <option value="size">Size</option>
                       <option value="color">Color</option>
@@ -49,7 +69,7 @@ const Products = () => {
                     </select>
                   </div>
                 </div>
-                <div className='md:grid md:grid-cols-3 md:gap-8 pt-10 space-y-12'>
+                <div className='md:grid md:grid-cols-3 md:gap-8 pt-10 space-y-12 md:space-y-0'>
                   {
                     productsData.map((product, i) => (
                       <ProductCard key={i} id={product.id} img={product.img} name={product.name} />

@@ -63,14 +63,14 @@ export default function NavBar() {
                 <Link href='/'>Home</Link>
               </li> */}
               <li className='hover:text-[#f3b004] hover:underline px-3'>
-                <Link href='about-us'>About US</Link>
+                <Link href='/about-us'>About US</Link>
               </li>
               <ServiceNav/>
               <li className='hover:text-[#f3b004] hover:underline px-3'>
-                <Link href='products'>Our Products</Link>
+                <Link href='/products'>Our Products</Link>
               </li>
               <li className='hover:text-[#f3b004] hover:underline px-3'>
-                <Link href='contact-us'>Contact Us</Link>
+                <Link href='/contact-us'>Contact Us</Link>
               </li>
             </ul>
           </div>

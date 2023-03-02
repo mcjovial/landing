@@ -4,9 +4,10 @@ import React, { FC } from 'react'
 interface IBreadcrum {
   title: string;
   name: string;
+  sub?: string;
 }
 
-const Breadcrum: FC<IBreadcrum> = ({title, name}) => {
+const Breadcrum: FC<IBreadcrum> = ({title, name, sub}) => {
   return (
     <>
       <div className='container m-auto'>
@@ -15,6 +16,7 @@ const Breadcrum: FC<IBreadcrum> = ({title, name}) => {
           <div className='flex space-x-1.5 items-center'>
             <Link className='hover:text-[#f3b004]' href='/'>Home</Link>
             <p> / {name}</p>
+            <p> / {sub}</p>
           </div>
         </div>
       </div>
