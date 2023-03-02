@@ -11,7 +11,7 @@ import { FaFacebookF, FaInstagram, FaPhoneSquareAlt, FaPinterestP } from 'react-
 const Header = () => {
   return (
     <>
-      <div className='sticky top-0 z-10'>
+      <div className='sticky top-0 z-20'>
         <div className='w-full absolute'>
           <div className='border-b-[1px] border-gray-200 border-opacity-20 text-white bg-[#f3b004]'>
             <div className='hidden justify-between px-4 py-3 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8'>

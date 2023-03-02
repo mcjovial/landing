@@ -59,9 +59,9 @@ export default function NavBar() {
             }`}
           >
             <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 uppercase'>
-              <li className='hover:text-[#f3b004] hover:underline px-3'>
+              {/* <li className='hover:text-[#f3b004] hover:underline px-3'>
                 <Link href='/'>Home</Link>
-              </li>
+              </li> */}
               <li className='hover:text-[#f3b004] hover:underline px-3'>
                 <Link href='about-us'>About US</Link>
               </li>
