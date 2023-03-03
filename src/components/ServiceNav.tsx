@@ -7,7 +7,7 @@ const ServiceNav = () => {
       <div>
         <div className="px-3 text-left md:cursor-pointer group">
           <h1 className="flex justify-between items-center md:pr-0 pr-5 group">
-            <Link href='services'>Services</Link>
+            <Link href='/services'>Services</Link>
             <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
               <BsChevronDown className='w-3'/>
             </span>

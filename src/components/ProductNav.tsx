@@ -7,7 +7,7 @@ const ProductNav = () => {
       <div>
         <div className="px-3 text-left md:cursor-pointer group">
           <h1 className="flex justify-between items-center md:pr-0 pr-5 group">
-            <Link href='services'>Our Products</Link>
+            <Link href='/products'>Our Products</Link>
             <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
               <BsChevronDown className='w-3'/>
             </span>
@@ -18,7 +18,7 @@ const ProductNav = () => {
                 <div className="w-4 h-4 left-3 absolute mt-1 bg-gray-100 rotate-45"></div>
               </div>
               <div className="bg-gray-100 p-5">
-                <Link href="services">
+                <Link href="/products">
                   <div className='space-y-4'>
                     <h1 className="capitalize">
                       Fire Safety Products
