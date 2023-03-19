@@ -4,27 +4,41 @@ import NavBar from '@/components/Navbar'
 import Breadcrum from '@/components/Page/Breadcrum'
 import Description from '@/components/Products/Description'
 import Reviews from '@/components/Products/Reviews'
+import { IProduct, products } from '@/data/products'
 import Head from 'next/head'
-import React, { useState } from 'react'
+import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
 
 const ProductDetail = () => {
+  const router = useRouter()
+  const { id } = router.query
   const [selectedNav, setSelectedNav] = useState('DESCRIPTION')
+  const [product, setProduct] = useState<IProduct>()
 
+  console.log(id);
+  
+  useEffect(() => {
+    const product = products?.find((product)=> product.id === Number(id))
+    setProduct(product)
+  }, [id])
+  
+
+  
   const navItems: Record<string, any> = {
     DESCRIPTION: {
       name: 'Description',
       value: 'DESCRIPTION',
-      component: Description,
+      component: <Description specification={product?.specification} />,
     },
     REVIEWS: {
       name: 'Reviews',
       value: 'REVIEWS',
-      component: Reviews,
+      component: <Reviews/>,
     },
   }
 
   const nav = navItems[selectedNav];
-  const Component = nav.component ?? Description;
+  const Component = nav.component ?? <Description specification={product?.specification}/>;
   const values = Object.values(navItems);
 
   return (
@@ -84,14 +98,12 @@ const ProductDetail = () => {
               </div>
               <div className='w-full space-y-8'>
                 <div className='space-y-2'>
-                  <p className='text-4xl font-medium'>AQR2532NNW | S55720-S136</p>
-                  <p className='text-gray-400'>AQR2532NNW – Front module for base modules, temperature (active)</p>
+                  <p className='text-4xl font-medium'>{product?.name}</p>
+                  <p className='text-gray-400'>{product?.description}</p>
                   <div className='flex text-xs'>
-                    <p className='text-gray-400 mr-2'>Categories:</p>
+                    <p className='text-gray-400 mr-2'>Category:</p>
                     <div className='flex gap-2'>
-                      <a className='hover:underline'>Accessories</a>
-                      <p className='hover:underline'>Automation system</p>
-                      <p className='hover:underline'>Building Management</p>
+                      <a className='hover:underline'>{product?.category}</a>
                     </div>
                   </div>
                   <div className='flex gap-2 text-sm'>
@@ -120,7 +132,7 @@ const ProductDetail = () => {
                     }
                   </div>
                   <div>
-                    <Component/>
+                    { Component }
                   </div>
                 </div>
               </div>

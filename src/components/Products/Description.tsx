@@ -1,6 +1,8 @@
-import React from 'react'
+import { IProduct } from '@/data/products';
+import React, { FC, useEffect } from 'react'
 
-const Description = () => {
+const Description: FC<IProduct> = ({ specification }) => {  
+  
   return (
     <>
       <div>
@@ -8,86 +10,27 @@ const Description = () => {
           <table className="w-full text-sm text-left text-gray-500">
             <thead className="text-xs text-gray-900 uppercase bg-gray-50">
               <tr>
-                <th className="px-6 py-3 font-bold text-2xl">
+                <th className="px-6 py-3 font-bold text-2xl text-right">
                   Product
                 </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-500 whitespace-nowrap">
-                  Article Number (Market Facing Number)
-                </th>
-                <td className="px-6 py-4">
-                  AQR2532NNW | S55720-S136
-                </td>
-              </tr>
-              <tr className="border-b bg-gray-50">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-500 whitespace-nowrap">
-                  Product Description
-                </th>
-                <td className="px-6 py-4">
-                  AQR2532NNW – Front module for base modules, temperature (active)
-                </td>
-              </tr>
-              <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-500 whitespace-nowrap">
-                  Product family
-                </th>
-                <td className="px-6 py-4">
-                  AQR253.. – Front modules for base module
-                </td>
-              </tr>
-              <tr className="border-b bg-gray-50">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-500 whitespace-nowrap">
-                  Product Lifecycle (PLM)
-                </th>
-                <td className="px-6 py-4">
-                  PM300:Active Product
-                </td>
-              </tr>
-            </tbody>
-            {/*  */}
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50">
-              <tr>
-                <th className="px-6 py-3 font-bold text-2xl">
-                Price data
+                <th className="px-6 py-3 font-bold text-2xl text-left">
+                  Specifications
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-500 whitespace-nowrap">
-                  Price Group / Headquarter Price Group
-                </th>
-                <td className="px-6 py-4">
-                  C41 / C41
-                </td>
-              </tr>
-              <tr className="border-b bg-gray-50">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-500 whitespace-nowrap">
-                  List Price
-                </th>
-                <td className="px-6 py-4">
-                  $$$
-                </td>
-              </tr>
-              <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-500 whitespace-nowrap">
-                  Customer Price
-                </th>
-                <td className="px-6 py-4">
-                  $$$
-                </td>
-              </tr>
-              <tr className="border-b bg-gray-50">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-500 whitespace-nowrap">
-                  Metal Factor
-                </th>
-                <td className="px-6 py-4">
-                  None
-                </td>
-              </tr>
+              {
+                specification?.map((x: (string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined)[], i: React.Key | null | undefined) => (
+                  <tr className="bg-white border-b" key={i}>
+                    <th scope="row" className="px-6 py-4 font-medium text-gray-500 whitespace-nowrap">
+                      {x[0]}
+                    </th>
+                    <td className="px-6 py-4">
+                      {x[1]}
+                    </td>
+                  </tr>
+                ))
+              }
             </tbody>
           </table>
         </div>

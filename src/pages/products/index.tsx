@@ -5,17 +5,10 @@ import ProductCard from '@/components/Products/Card'
 import Head from 'next/head'
 import React, { useState } from 'react'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
+import { products } from '@/data/products'
 
 const Products = () => {
   const [keyword, setKeyword] = useState('');
-  const productsData = [
-    { id: 1, img: "/assets/shop-image.png", name: "Product One" },
-    { id: 2, img: "/assets/shop-image.png", name: "Product One" },
-    { id: 3, img: "/assets/shop-image.png", name: "Product One" },
-    { id: 4, img: "/assets/shop-image.png", name: "Product One" },
-    { id: 5, img: "/assets/shop-image.png", name: "Product One" },
-    { id: 6, img: "/assets/shop-image.png", name: "Product One" },
-  ];
 
   const search = (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -71,7 +64,7 @@ const Products = () => {
                 </div>
                 <div className='md:grid md:grid-cols-3 md:gap-8 pt-10 space-y-12 md:space-y-0'>
                   {
-                    productsData.map((product, i) => (
+                    products.map((product, i) => (
                       <ProductCard key={i} id={product.id} img={product.img} name={product.name} />
                     ))
                   }

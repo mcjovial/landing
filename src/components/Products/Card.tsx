@@ -1,11 +1,12 @@
+import { IProduct } from '@/data/products';
 import Link from 'next/link';
 import React, { FC } from 'react'
 
-interface IProduct {
-  id: number;
-  img: string;
-  name: string;
-}
+// interface IProduct {
+//   id: number;
+//   img: string;
+//   name: string;
+// }
 
 const ProductCard: FC<IProduct> = ({id, img, name}) => {
   return (
@@ -16,7 +17,7 @@ const ProductCard: FC<IProduct> = ({id, img, name}) => {
             <img className='w-full' src="/assets/shop-item.png" alt="" />
           </div>
           <div className='text-center py-4'>
-            <p className='text-xl text-gray-600'>Product Name</p>
+            <p className='text-xl text-gray-600'>{name}</p>
           </div>
         </Link>
       </div>
