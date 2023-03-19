@@ -11,7 +11,7 @@ const Description: FC<IProduct> = ({ specification }) => {
             <thead className="text-xs text-gray-900 uppercase bg-gray-50">
               <tr>
                 <th className="px-6 py-3 font-bold text-2xl text-right">
-                  Product
+                  Technical
                 </th>
                 <th className="px-6 py-3 font-bold text-2xl text-left">
                   Specifications

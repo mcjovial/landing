@@ -42,7 +42,7 @@ const Accordion = () => {
         <div>
           <div className='text-left m-auto mb-10'>
             <p className='text-2xl my-2 text-gray-600'>WHY CHOOSE US</p>
-            <div className='bg-amber-400 p-0.5 max-w-[80px]'></div>
+            <div className='bg-[#0497f3] p-0.5 max-w-[80px]'></div>
             <hr />
           </div>
           <div>
@@ -50,7 +50,7 @@ const Accordion = () => {
               <AccordionItem
                 key={index}
                 open={index === open}
-                toggle={()=>toggle(index)}
+                toggle={() => toggle(index)}
                 title={data.title}
                 description={data.description}
               />

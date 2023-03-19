@@ -1,8 +1,8 @@
-import React, { FC, useEffect, useState } from 'react'
-import Slider from 'react-slick'
-import Card from './Card'
-import NextArrow from './NextArrow'
-import PrevArrow from './PrevArrow'
+import React, { FC, useEffect, useState } from 'react';
+import Slider from 'react-slick';
+import Card from './Card';
+import NextArrow from './NextArrow';
+import PrevArrow from './PrevArrow';
 
 interface IHSlider {
   data: any;
@@ -10,25 +10,25 @@ interface IHSlider {
   bar?: boolean;
 }
 
-const HSlider: FC<IHSlider> = ({data, title, bar}) => {
-  const [progress, setProgress] = useState(0)
-  const [slideToShow, setSlideToShow] = useState(3)
+const HSlider: FC<IHSlider> = ({ data, title, bar }) => {
+  const [progress, setProgress] = useState(0);
+  const [slideToShow, setSlideToShow] = useState(3);
 
   const setSlides = () => {
     if (window.innerWidth <= 1280 && window.innerWidth > 1000) {
-      setSlideToShow(3)
-    } else if(window.innerWidth <= 1000 && window.innerWidth > 650) {
-      setSlideToShow(2)
+      setSlideToShow(3);
+    } else if (window.innerWidth <= 1000 && window.innerWidth > 650) {
+      setSlideToShow(2);
     } else if (window.innerWidth <= 650) {
-      setSlideToShow(1)
+      setSlideToShow(1);
     }
-  }
+  };
 
   useEffect(() => {
-    setSlides()
-    setProgress(100 / (data.length - slideToShow + 1))
-    window.addEventListener("resize", ()=> setSlides())
-  }, [])
+    setSlides();
+    setProgress(100 / (data.length - slideToShow + 1));
+    window.addEventListener('resize', () => setSlides());
+  }, []);
 
   const settings = {
     arrows: true,
@@ -49,21 +49,20 @@ const HSlider: FC<IHSlider> = ({data, title, bar}) => {
         breakpoint: 1000,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 650,
         settings: {
           slidesToShow: 1,
-        }
+        },
       },
     ],
     afterChange: (current: number) => {
-      setProgress(100 / (data.length - slideToShow + 1) * (current + 1))
+      setProgress((100 / (data.length - slideToShow + 1)) * (current + 1));
       console.log(slideToShow);
-      
-    }
-  }
+    },
+  };
 
   return (
     <div className=''>
@@ -71,25 +70,47 @@ const HSlider: FC<IHSlider> = ({data, title, bar}) => {
         <div className='py-16'>
           <div className='text-left m-auto mb-10'>
             <p className='text-2xl my-2 text-gray-600 uppercase'>{title}</p>
-            <div className='bg-[#f3b004] p-0.5 max-w-[80px]'></div>
+            <div className='bg-[#0497f3] p-0.5 max-w-[80px]'></div>
             <hr />
           </div>
           <div className='relative'>
             <Slider {...settings}>
-              {
-                data.map((card: { id: number; img: string; title: string | undefined; body: string | undefined }, i: React.Key | null | undefined) => (
-                  <Card key={i} img={card.img} title={card.title} body={card.body} post={!!card.body} id={card.id} />
-                ))
-              }
+              {data.map(
+                (
+                  card: {
+                    id: number;
+                    img: string;
+                    title: string | undefined;
+                    body: string | undefined;
+                  },
+                  i: React.Key | null | undefined
+                ) => (
+                  <Card
+                    key={i}
+                    img={card.img}
+                    title={card.title}
+                    body={card.body}
+                    post={!!card.body}
+                    id={card.id}
+                  />
+                )
+              )}
             </Slider>
-            {bar ? <div className='h-[2px] bg-gray-400 w-[250px] absolute -top-[15px] right-0'>
-              <div className='bg-[#f3b004] absolute h-full transition-all' style={{ width: `${progress}%` }}></div>
-            </div> : ''}
+            {bar ? (
+              <div className='h-[2px] bg-gray-400 w-[250px] absolute -top-[15px] right-0'>
+                <div
+                  className='bg-[#0497f3] absolute h-full transition-all'
+                  style={{ width: `${progress}%` }}
+                ></div>
+              </div>
+            ) : (
+              ''
+            )}
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HSlider
+export default HSlider;

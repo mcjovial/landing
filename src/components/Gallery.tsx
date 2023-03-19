@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Slider from 'react-slick';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const Gallery = () => {
-  const galleryImages = []
+  const galleryImages = [];
   const gallerySetting = {
     dots: false,
     infinite: true,
@@ -12,7 +12,7 @@ const Gallery = () => {
     slidesToScroll: 1,
     nextArrow: <IoIosArrowForward />,
     prevArrow: <IoIosArrowBack />,
-};
+  };
 
   return (
     <>
@@ -22,7 +22,7 @@ const Gallery = () => {
             <div>
               <div className='text-left m-auto mb-10'>
                 <p className='text-2xl my-2 text-gray-600'>ABOUT US</p>
-                <div className='bg-amber-400 p-0.5 max-w-[80px]'></div>
+                <div className='bg-[#0497f3] p-0.5 max-w-[80px]'></div>
                 <hr />
               </div>
               <div className='w-full'>
@@ -65,7 +65,7 @@ const Gallery = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;

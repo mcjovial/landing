@@ -13,7 +13,7 @@ export default function NavBar() {
         <div>
           <div className='flex items-center justify-between py-3 md:py-3 md:block'>
             <Link href='/'>
-              <Logo/>
+              <Logo />
             </Link>
             <div className='md:hidden'>
               <button
@@ -60,15 +60,15 @@ export default function NavBar() {
             }`}
           >
             <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 uppercase'>
-              {/* <li className='hover:text-[#f3b004] hover:underline px-3'>
+              {/* <li className='hover:text-[#0497f3] hover:underline px-3'>
                 <Link href='/'>Home</Link>
               </li> */}
-              <li className='hover:text-[#f3b004] hover:underline px-3'>
+              <li className='hover:text-[#0497f3] hover:underline px-3'>
                 <Link href='/about-us'>About US</Link>
               </li>
               <ServiceNav />
               <ProductNav />
-              <li className='hover:text-[#f3b004] hover:underline px-3'>
+              <li className='hover:text-[#0497f3] hover:underline px-3'>
                 <Link href='/contact-us'>Contact Us</Link>
               </li>
             </ul>

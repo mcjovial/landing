@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Slider from 'react-slick';
 
 const Partners = () => {
@@ -10,7 +10,7 @@ const Partners = () => {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
-    cssEase: "linear"
+    cssEase: 'linear',
   };
   return (
     <div>
@@ -19,45 +19,45 @@ const Partners = () => {
           <div className=''>
             {/* <div className='text-left m-auto mb-10'>
               <p className='text-2xl my-2 text-gray-600 uppercase'>Our Partners</p>
-              <div className='bg-amber-400 p-0.5 max-w-[80px]'></div>
+              <div className='bg-[#0497f3] p-0.5 max-w-[80px]'></div>
               <hr />
             </div> */}
             <Slider {...settings}>
               <div className=''>
-                <img src="/assets/images/partners/1-grundfos.png" alt="" />
+                <img src='/assets/images/partners/1-grundfos.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/2-ilbagno.png" alt="" />
+                <img src='/assets/images/partners/2-ilbagno.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/3-legrand.png" alt="" />
+                <img src='/assets/images/partners/3-legrand.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/4-lg.png" alt="" />
+                <img src='/assets/images/partners/4-lg.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/5-rapidrop.png" alt="" />
+                <img src='/assets/images/partners/5-rapidrop.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/6-schn.png" alt="" />
+                <img src='/assets/images/partners/6-schn.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/7-siemens.png" alt="" />
+                <img src='/assets/images/partners/7-siemens.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/8-toa.png" alt="" />
+                <img src='/assets/images/partners/8-toa.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/9-vand.png" alt="" />
+                <img src='/assets/images/partners/9-vand.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/10-db.fw_.png" alt="" />
+                <img src='/assets/images/partners/10-db.fw_.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/11-diakin.png" alt="" />
+                <img src='/assets/images/partners/11-diakin.png' alt='' />
               </div>
               <div>
-                <img src="/assets/images/partners/12-franke.png" alt="" />
+                <img src='/assets/images/partners/12-franke.png' alt='' />
               </div>
             </Slider>
           </div>
@@ -65,6 +65,6 @@ const Partners = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Partners
+export default Partners;

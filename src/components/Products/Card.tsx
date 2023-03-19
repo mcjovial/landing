@@ -1,6 +1,6 @@
 import { IProduct } from '@/data/products';
 import Link from 'next/link';
-import React, { FC } from 'react'
+import React, { FC } from 'react';
 
 // interface IProduct {
 //   id: number;
@@ -8,13 +8,13 @@ import React, { FC } from 'react'
 //   name: string;
 // }
 
-const ProductCard: FC<IProduct> = ({id, img, name}) => {
+const ProductCard: FC<IProduct> = ({ id, img, name }) => {
   return (
     <>
       <div className='w-full shadow-md'>
         <Link href={`/products/${id}`}>
-          <div className='hover:border hover:border-[#f3b004]'>
-            <img className='w-full' src="/assets/shop-item.png" alt="" />
+          <div className='hover:border hover:border-[#0497f3]'>
+            <img className='w-full' src='/assets/shop-item.png' alt='' />
           </div>
           <div className='text-center py-4'>
             <p className='text-xl text-gray-600'>{name}</p>
@@ -22,7 +22,7 @@ const ProductCard: FC<IProduct> = ({id, img, name}) => {
         </Link>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProductCard
+export default ProductCard;
