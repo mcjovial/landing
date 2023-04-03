@@ -14,7 +14,7 @@ const ProductCard: FC<IProduct> = ({ id, img, name }) => {
       <div className='w-full shadow-md'>
         <Link href={`/products/${id}`}>
           <div className='hover:border hover:border-[#0497f3]'>
-            <img className='w-full' src='/assets/shop-item.png' alt='' />
+            <img className='w-full' src={img} alt='' />
           </div>
           <div className='text-center py-4'>
             <p className='text-xl text-gray-600'>{name}</p>

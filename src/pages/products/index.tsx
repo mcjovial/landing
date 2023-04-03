@@ -1,8 +1,5 @@
-import Footer from '@/components/Footer';
-import NavBar from '@/components/Navbar';
 import Breadcrum from '@/components/Page/Breadcrum';
 import ProductCard from '@/components/Products/Card';
-import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { IProduct, products } from '@/data/products';

@@ -1,12 +1,8 @@
-import Footer from '@/components/Footer';
-import Gallery from '@/components/Gallery';
 import PageLayout from '@/components/Layout';
-import NavBar from '@/components/Navbar';
 import Breadcrum from '@/components/Page/Breadcrum';
 import Description from '@/components/Products/Description';
 import Reviews from '@/components/Products/Reviews';
 import { IProduct, products } from '@/data/products';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
@@ -15,8 +11,6 @@ const ProductDetail = () => {
   const { id } = router.query;
   const [selectedNav, setSelectedNav] = useState('DESCRIPTION');
   const [product, setProduct] = useState<IProduct>();
-
-  console.log(id);
 
   useEffect(() => {
     const product = products?.find((product) => product.id === Number(id));
@@ -56,7 +50,7 @@ const ProductDetail = () => {
                   <div className='mb-3'>
                     <img
                       className='w-full'
-                      src='/assets/shop-item.png'
+                      src={product?.img}
                       alt='alt'
                     />
                   </div>
@@ -65,7 +59,7 @@ const ProductDetail = () => {
                       <img
                         width={200}
                         className=''
-                        src='/assets/images/gallery/p-1.jpg'
+                        src={product?.img}
                         alt='alt'
                       />
                     </div>
@@ -73,7 +67,7 @@ const ProductDetail = () => {
                       <img
                         width={200}
                         className=''
-                        src='/assets/images/gallery/p-2.jpg'
+                        src={product?.img}
                         alt='alt'
                       />
                     </div>
@@ -81,7 +75,7 @@ const ProductDetail = () => {
                       <img
                         width={200}
                         className=''
-                        src='/assets/images/gallery/p-3.jpg'
+                        src={product?.img}
                         alt='alt'
                       />
                     </div>
